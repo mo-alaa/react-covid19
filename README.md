@@ -8,4 +8,4 @@ But I've changedthe UI alot as well as the api.
 
 However, there are some issues about the graph, as it gets the cumulative data. This is actually an issue in the api that i use, because it can't get the specific data for each day.
 
-![image](https://user-images.githubusercontent.com/41386480/86511582-d6b6cf80-bdfa-11ea-81fc-4de8a4259a72.png)
+![image](https://user-images.githubusercontent.com/41386480/86511638-547adb00-bdfb-11ea-9fcf-dcfb77e2ac36.png)
