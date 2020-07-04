@@ -9,3 +9,6 @@ But I've changedthe UI alot as well as the api.
 However, there are some issues about the graph, as it gets the cumulative data. This is actually an issue in the api that i use, because it can't get the specific data for each day.
 
 ![image](https://user-images.githubusercontent.com/41386480/86511638-547adb00-bdfb-11ea-9fcf-dcfb77e2ac36.png)
+
+![image](https://user-images.githubusercontent.com/41386480/86511666-9441c280-bdfb-11ea-8d75-29d1b8398fcf.png)
+
