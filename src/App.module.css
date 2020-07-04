@@ -1,5 +1,6 @@
 body {
   background-color: rgb(255,255,255);  
+  margin: 0 !important;
 }
 
 .container {
@@ -21,4 +22,19 @@ body {
   .image {
     width: 100px;
   }
+}
+
+.home {
+  background: url(./images/1a.jpg) no-repeat;
+    /* background-size: cover; */
+    background-position: center;
+    min-height: 300px;
+   max-height: 400px;
+   width: 100%;
+}
+
+.main {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

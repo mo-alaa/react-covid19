@@ -22,3 +22,38 @@
         margin: 2% 0 !important;
     }
 }
+
+
+.divider{
+    color: #fff;
+    text-align: center;
+  }
+  
+  .dividerOne {
+    background: #c58000;
+  }
+  
+  .dividerTwo {
+    background: #009933;
+  }
+  .dividerThree {
+    background: #a00b01;
+  }
+  
+  .divider .fa {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 32px;
+    width: 80px;
+    height: 80px;
+    line-height: 76px;
+    text-transform: capitalize;
+  }
+  
+  .cardHeader {
+    padding-bottom: 4px;
+  }
+  
+  .cardDesc {
+    margin: 0 0 10px;
+  }

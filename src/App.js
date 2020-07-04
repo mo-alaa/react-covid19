@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Cards, Charts, CountryPicker } from './components';
 import styles from './App.module.css'
 import { fetchData, fetchSummaryData } from './api';
 import coronaImage from './images/image.png';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import styled from 'styled-components'
 class App extends React.Component {
     state = {
         data: {},
         country: '',
         countryCode: ''
     }
+
+
 
     async componentDidMount() {
         // const data = await fetchData();
@@ -33,21 +36,41 @@ class App extends React.Component {
     //     //fetch data
     //     //set state
     // }
+
+
+
     render() {
         const { data, country } = this.state;
 
 
 
-        return (
-            <div className={styles.container}
-            // style={{backgroundImage:  `url(require('https://www.countryflags.io/${this.state.countryCode}/flat/64.png'))`}}
 
-            >
+        return (
+
+            // <Fragment>
+            //     <div className={styles.home}></div>
+            //     <Cards data={data} />
+            //     <div className={styles.main}>
+            //         <div className="container">
+            //             <div className="row justify-content-center">
+            //                 <CountryPicker handleCountryChange={this.handleCountryChange} />
+            //             </div>
+            //             <div className="row justify-content-center">
+            //                 <Charts data={data} country={country} />
+            //             </div>
+            //         </div>
+            //     </div>
+            // </Fragment>
+            // <div className={styles.container}
+            // // style={{backgroundImage:  `url(require('https://www.countryflags.io/${this.state.countryCode}/flat/64.png'))`}}
+
+            // >
+            <div className={styles.container}>
                 <img className={styles.image} src={coronaImage} alt='COVID-19' />
-                {/* {this.state.countryCode ? <img src={`https://www.countryflags.io/${this.state.countryCode}/flat/64.png`}></img> : ''} */}
+              
                 <Cards data={data} />
                 <CountryPicker handleCountryChange={this.handleCountryChange} />
-         
+
 
             <Charts data={data} country={country} />
             </div>

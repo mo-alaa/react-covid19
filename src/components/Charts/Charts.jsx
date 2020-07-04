@@ -28,7 +28,7 @@ const {DailyData} = data;
         DailyData ?
             <Line
                 data={{
-                    labels: DailyData.map(({ Date }) => Date),
+                    labels: DailyData.map(dailyData  => new Date(dailyData.Date).toLocaleDateString('en-GB')),
                     datasets: [
                         {
                             data: DailyData.map(({ Confirmed }) => Confirmed),
@@ -62,7 +62,7 @@ const {DailyData} = data;
         DailyData ?
             <Line
                 data={{
-                    labels: DailyData.map(({ Date }) => Date),
+                    labels: DailyData.map(dailyData => new Date(dailyData.Date).toLocaleDateString('en-GB')),
                     datasets: [
                         {
                             data: DailyData.map(({ Confirmed }) => Confirmed),
